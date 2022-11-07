@@ -1,0 +1,9 @@
+JPA 관련 추가 학습...
+- JPA란?
+- NoSQL 매핑은 ODM?
+- commit 시점? 동기/비동기?
+- 영속성 컨텍스트? 엔티티?
+
+@Controller와 @RestController
+
+MongoDB의 ObjectId객체
