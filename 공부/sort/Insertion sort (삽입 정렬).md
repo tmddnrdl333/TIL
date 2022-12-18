@@ -8,13 +8,9 @@
 
 - 두 번째 자료부터 시작, 그 앞의 모든 자료들과 비교하여 삽입할 위치를 탐색. 해당 위치로부터 모두 뒤로 한 칸씩 옮기고, 자료 삽입. 이를 반복.
 
-
-
 ## 예시
 
 <img title="" src="./insertion.png" alt="" width="504">
-
-
 
 ## 특징
 
@@ -30,8 +26,6 @@
   
   - 레코드 수가 많을수록, 크기가 클 수록 비효율적
 
-
-
 - 시간 복잡도
   
   - 최선의 경우 (이미 정렬된 경우)
@@ -46,9 +40,7 @@
     
     - `Worst T(n) = O(n^2)`
 
-
-
-## 참고자료
+## 출처
 
 [[알고리즘] 삽입 정렬(insertion sort)이란 - Heee's Development Blog](https://gmlwjd9405.github.io/2018/05/06/algorithm-insertion-sort.html)
 
