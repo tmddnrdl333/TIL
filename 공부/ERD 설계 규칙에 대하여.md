@@ -6,15 +6,11 @@ java에선 camel case를 주로 쓰지만 (CamelCase)
 
 DB나 API에서는 snake case를 많이 사용한다고 한다. (snake_case)
 
-
-
 ## 2. 테이블명은 복수형, 컬럼명은 단수형으로
 
 논리적인 상황을 잘 따져야겠지만, 일반적인 상황에서 위와 같이 지킨다.
 
 예를 들어 drinks 라는 테이블 아래 컬럼으로 coke를 넣는다던지...
-
-
 
 ## 3. 기타
 
@@ -25,8 +21,6 @@ DB나 API에서는 snake case를 많이 사용한다고 한다. (snake_case)
 - 약어도 지양!
 
 - 각 테이블 pk를 타 테이블이 참조할 때, 테이블명\_id 이런식으로 외래키 참조한다.
-
-
 
 ## 4. varchar & char
 
@@ -46,4 +40,20 @@ varchar는 추가로직이 발생하기 때문에 느리다고 생각할 수 있
 
 그래서 단순하게 정리하자면... 나처럼 개인 프로젝트에서는 사실 상관이 없겠지만, 어차피 varchar를 쓰는 편이 낫다고 보고 실무에서도 그렇게 쓰는 쪽이 많은가보다... 그래서 나도 그냥 varchar를 쓰자\~
 
+## 5. DATE, DATETIME, TIME, TIMESTAMP
 
+[mysql DATE, DATETIME, TIME, TIMESTAMP 차이 : 네이버 블로그](https://m.blog.naver.com/nieah914/221810697040)
+
+- DATE: YYYY-MM-DD
+
+- DATETIME: YYYY-MM-DD HH:MM:SS
+
+- TIME: HH:MM:SS
+
+- TIMESTAMP: 1970-01-01 00\:00:01 ~ 2038-01-19 03\:14:07 UTC
+
+DATETIMTE vs. TIMESTAMP
+
+- DATETIME은 문자형, 8byte, 입력시 생성
+
+- TIMESTAMP는 숫자형, 4byte, 저장시 자동 생성
