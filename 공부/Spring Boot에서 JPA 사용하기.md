@@ -154,4 +154,4 @@ public Order cancelOrder(int orderId) {
 
 위와 같이, order, billing, delivery가 각자 본인의 취소 이벤트를 처리하면, 서비스 메소드는 트랜잭션과 도메인 간의 순서만 보장해주면 된다.
 
- 
++) Jpa의 remove/delete를 사용하려면 @Transactional 어노테이션이 달려있어야 한다.
