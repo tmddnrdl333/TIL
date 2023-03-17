@@ -1,10 +1,8 @@
-# Spring JPA FetchType.Lazy로 인한 오류와 FetchType.Eager
+# Spring JPA FetchType.LAZY로 인한 오류와 FetchType.EAGER
 
 오류가 발생해서 구글링으로 해결했다.
 
 오류 발생 지점을 보여주자면...
-
-
 
 ## 발단
 
@@ -40,8 +38,6 @@ public class Category {
 
 이 상태에서 Item의 List를 조회했더니? 앞서 말한 오류가 발생했다.
 
-
-
 ## FetchType.LAZY와 FetchType.EAGER
 
 1. 지연로딩 (FetchType.LAZY)
@@ -51,8 +47,6 @@ A Entity(부모)를 조회할 때 지연로딩지정된 B Entity(자식)를 즉�
 2. 즉시로딩 (FetchType.EAGER)
 
 A Entity(부모)를 조회할 때 즉시로딩지정된 B Entity(자식)를 즉시 로딩하는 방식.
-
-
 
 ## 해결 방법
 
@@ -86,8 +80,6 @@ private Category category;
 이렇게 작성하면... category_no 뿐만 아니라 category 전체를 불러오니 category_name까지 불러오게 된다.
 
 즉, nested된 JSON 형태로 response를 받게 된다.
-
-
 
 ## 결론
 
